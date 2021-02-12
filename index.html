@@ -1,0 +1,421 @@
+<!doctype html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>COVID - Social Shopping </title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/favi.png">
+
+
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+
+        <header>
+                <h1> Covid - Social Shopping</h1>
+        </header>
+
+        <div class="seperator"></div>
+
+        <header>
+
+            <div class="toggleView">
+                <select name="Users" id="user">
+                </select>
+            </div>
+
+
+            <div class="toggleView">
+                <button class="customButton Hilfesuchend" > Hilfesuchend </button>
+                <button class="customButton Hilfeleistend" > Hilfeleistend </button>
+            </div>
+
+
+        </header>
+
+
+
+    <div class="normal">
+
+        <div class="centerBorder">
+            <img src="assets/Icon.png" alt="Einkaufstüte Icon" class="sizing ">
+        </div>
+
+
+        <h2 class="center">
+             Verfügbare Einkaufslisten:
+        </h2>
+
+
+        <div class="centerBorder decreasespacer addListSurrounding">
+            <button class="customButton addList" > Neue Liste anlegen </button>
+        </div>
+
+        <div class="centerBorder">
+            <div class="alertDetailEdit alertAddList hide">
+
+                <span class="closebtn">&times;</span>
+
+
+                <h3>Neue Liste hinzufügen </h3>
+                <p>Es müssen alle Felder ausgefüllt werden.</p>
+
+
+                <label class="bold" for="beschr" >Beschreibung: </label>
+                <div class="alertErrorEditList hide beschrAddError">
+                    Keine gültige Beschreibung !
+                </div>
+                <input type="text" class="styler" name="Beschreibung" id="beschr" placeholder="..." >
+
+                <label class="bold" for="dat">Erfüllungsdatum: </label>
+                <div class="alertErrorEditList hide datAddError">
+                    Kein gültiges Datum ! Format: 01.01.2020
+                </div>
+                <div class="alertErrorEditList hide datErrorpastList">
+                    Datum liegt in der Vergangenheit !
+                </div>
+                <div class="alertErrorEditList hide datErrorFuture">
+                    Datum liegt zu weit in der Zukunft !
+                </div>
+                <input type="date" class="styler" id="dat">
+
+
+                <button class="submitButton adder" > Hinzufügen  </button>
+
+
+            </div>
+        </div>
+
+
+
+
+
+        <div class="centerBorder ">
+            <div class="alertEdit upSpace hide">
+                <span class="closebtn">&times;</span>
+
+
+                <h3>Änderung der Liste von <span class="editname"></span></h3>
+                <label class="bold" for="changeName" >Neuer Name: </label>
+
+                <div class="alertErrorEditList hide">
+                    Kein gültiger Name !
+                </div>
+
+
+                <input type="text" name="Name" id="changeName" placeholder="Max Mustermann"  class="styler">
+                <button class="submitButton confirm" > Bestätigen  </button>
+
+
+            </div>
+        </div>
+
+
+
+
+
+
+        <div class="wrapper">
+
+
+
+            <div class="grid">
+
+                <!-- Dynamic Content --->
+
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+
+
+
+
+
+        <!-- |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+
+
+        <div class="detailview hide">
+
+            <h2 class="center">
+                Einkaufsliste - Detailansicht:
+            </h2>
+
+
+
+            <div class="centerBorder">
+
+                <button class="customButton" >Zurück zur Übersicht <i class="fa fa-angle-double-left"></i> </button>
+
+            </div>
+
+
+            <div class="centerBorder">
+                <div class=" alertAddArtikel hide">
+
+                    <span class="closebtn">&times;</span>
+
+                    <h3>Neuer Artikel hinzufügen: </h3>
+                    <p>Es müssen alle Felder ausgefüllt werden.</p>
+
+                    <label class="bold" for="artName" >Artikelname: </label>
+                    <div class="alertErrorEditList hide artNameAddError">
+                        Kein gültiger Artikelname!
+                    </div>
+                    <input type="text" class="styler" name="ArtikelName" id="artName" placeholder="..." >
+
+                    <label class="bold" for="preis" >Preis: </label>
+                    <div class="alertErrorEditList hide artPreisAddError">
+                        Kein gültiger Preis!
+                    </div>
+                    <input type="text" class="styler" name="Preis" id="preis" placeholder="..." >
+
+                    <label class="bold" for="anzahl" >Anzahl: </label>
+                    <div class="alertErrorEditList hide artAnzahlAddError">
+                        Keine zulässige Anzahl!
+                    </div>
+                    <input type="text" class="styler" name="Anzahl" id="anzahl" placeholder="..." >
+
+
+                    <button class="submitButtonAdd adder ArtikelHinzufügen" > Hinzufügen  </button>
+
+
+                </div>
+            </div>
+
+
+
+            <div class="centerBorder">
+                <div class=" alertEditArtikel hide">
+
+                    <span class="closebtn">&times;</span>
+
+                    <h3>Artikel bearbeiten: </h3>
+                    <p>Es müssen alle Felder ausgefüllt werden.</p>
+
+                    <label class="bold" for="artName" >Artikelname: </label>
+                    <div class="alertErrorEditList hide artNameEdit">
+                        Kein gültiger Artikelname!
+                    </div>
+                    <input type="text" class="styler" name="ArtikelName" id="NameEdit" placeholder="..." >
+
+                    <label class="bold" for="preis" >Preis: </label>
+                    <div class="alertErrorEditList hide artPreisEdit">
+                        Kein gültiger Preis!
+                    </div>
+                    <input type="text" class="styler" name="Preis" id="preisEdit" placeholder="..." >
+
+                    <label class="bold" for="anzahl" >Anzahl: </label>
+                    <div class="alertErrorEditList hide artAnzahlEdit">
+                        Keine zulässige Anzahl!
+                    </div>
+                    <input type="text" class="styler" name="Anzahl" id="anzahlEdit" placeholder="..." >
+
+
+                    <button class="submitButtonAdd adder artikeledit" > Hinzufügen  </button>
+
+
+                </div>
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+            <div class="centerBorder">
+
+                <div class="alertDetailEdit hide">
+
+                        <span class="closebtn">&times;</span>
+
+
+                        <h3>Liste bearbeiten <i class="fa fa-edit"></i> </h3>
+                    <p>Es müssen alle Felder ausgefüllt werden.</p>
+
+
+                    <label class="bold " for="changeNameDetail" >Neuer Name: </label>
+                        <div class="alertErrorEditList hide nameError">
+                            Kein gültiger Name !
+                        </div>
+                        <input type="text" class="styler" name="Name" id="changeNameDetail" placeholder="Max Mustermann" >
+
+                        <label class="bold" for="changeBeschreibungDetail" >Neue Beschreibung: </label>
+                        <div class="alertErrorEditList hide beschrError">
+                            Keine gültige Beschreibung !
+                        </div>
+                        <input type="text" class="styler" name="Beschreibung" id="changeBeschreibungDetail" placeholder="..." >
+
+                        <label class="bold" for="changeErfüllDatum"> Neues Erfüllungsdatum: </label>
+                        <div class="alertErrorEditList hide datError">
+                            Kein gültiges Datum !
+                        </div>
+                        <div class="alertErrorEditList hide datErrorpast">
+                        Datum liegt in der Vergangenheit !
+                        </div>
+                        <div class="alertErrorEditList hide datErrorFuture">
+                            Datum liegt zu weit in der Zukunft !
+                        </div>
+                        <input type="date" class="styler" id="changeErfüllDatum">
+
+
+
+
+                    <button class="submitButton confirmer" > Bestätigen  </button>
+
+
+
+
+                </div>
+
+
+
+            </div>
+
+
+
+            <div class="wrapper">
+
+
+
+
+
+                <div class="wrap">
+
+
+
+
+                    <div class="sidebar">
+
+                        <div class="space">
+
+
+                            <h2>Einkaufsliste von: <br> <span class="nametag"></span>  </h2>
+
+
+
+                            <button class="submitButton takeover"   > Einkaufsliste übernehmen  </button>
+                            <button class="submitButton detailEdit"  > Einkaufsliste bearbeiten <i class="fa fa-edit"></i>  </button>
+                            <button class="submitButton detailAdd" > Artikel hinzufügen  </button>
+                            <button class="listDeleteButton detailDelete" > Einkaufsliste löschen  <i class="fa fa-trash-o"></i></button>
+
+
+
+                            <div class="end">
+
+
+                                    <label class="bold" for="total" >Gesamtpreis: *</label>
+                                    <input type="text" name="Gesamtpreis" id="total" placeholder="Format: 12,34" required>
+                                    <button class="submitButton sendIt" > abschicken  </button>
+
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="content">
+
+                        <div class="topbar">
+
+                            <div class="alertError hide">
+                                <span class="closebtn">&times;</span>
+                                Falsches Zahlenformat! Bitte im Format 12,34 eingeben.
+                            </div>
+
+                            <div class="alertErrorStat hide">
+                                <span class="closebtn" >&times;</span>
+                                Die Liste muss zuerst übernommen werden.
+                            </div>
+
+
+                            <div class="alertSucc hide">
+                                <span class="closebtn" >&times;</span>
+                                Liste erfolgreich abgeschlossen und übermittelt.
+                            </div>
+                            <div class="alertSuccTaken hide">
+                                <span class="closebtn">&times;</span>
+                                Liste erfolgreich übernommen.
+                            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                            <p> <span class="boldText"> Beschreibung: </span> <span class="beschreibung"> </span> </p>
+                            <p> <span class="boldText"> Status: </span><span class="status"></span></p>
+                            <p> <span class="boldText"> Artikelanzahl: </span> <span class="amount"></span></p>
+                            <p> <span class="boldText"> Erstellungsdatum: </span> <span class="erstDat"> </span> <i class='fa fa-calendar fa-lg'></i> </p>
+                            <p> <span class="boldText">Erfüllungsdatum: </span> <span class="erfullDat"> </span> <i class='fa fa-calendar fa-lg'></i>  </p>
+
+                        </div>
+
+                        <div class="articles">
+                            <h2>Artikel</h2>
+
+                            <!-- Dynamic Content -->
+
+                        </div>
+
+
+
+                    </div>
+
+
+
+                </div>
+
+
+
+
+            </div>
+
+        </div>
+
+
+
+
+
+
+        <footer>
+        <div>
+            <a href="#">Impressum</a>
+            <a href="#">Datenschutz</a>
+            <a href="#">Kontakt</a>
+        </div>
+    </footer>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="module" src="JavaScript/main.js"></script>
+
+
+
+</body>
+</html>

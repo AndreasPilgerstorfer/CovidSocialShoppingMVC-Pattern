@@ -1,0 +1,219 @@
+
+{
+  "listId" : 0,
+  "lists" : [
+    {
+      "id":1,
+      "name" : "Andreas Mosseri",
+      "amount" : "6",
+      "beschreibung" : "Diese Liste ist für den Supermarkt Billa",
+      "erstellDatum": "13.12.2020",
+      "erfuellDatum": "20.12.2020",
+      "status": "offen",
+      "articles" : [
+        {
+          "name" : "Mandelmilch",
+          "preis" : "max. 3 Euro",
+          "Anzahl" : "1 Liter"
+        },
+        {
+          "name" : "Coca-Cola",
+          "preis" : "max. 1 Euro",
+          "Anzahl" : "0,5 Liter"
+        },
+        {
+          "name" : "Räucherlachs",
+          "preis" : "max. 5 Euro",
+          "Anzahl" : "1 Packung"
+        },
+        {
+          "name" : "Vollkornbrot",
+          "preis" : "max. 4 Euro",
+          "Anzahl" : "1 Stück"
+        },
+        {
+          "name" : "Tortilla-Wraps",
+          "preis" : "max. 3,5 Euro",
+          "Anzahl" : "1 Liter"
+        },
+        {
+          "name" : "Landfrischkäse",
+          "preis" : "max. 3 Euro",
+          "Anzahl" : "1 Packung"
+        }
+      ]
+    },
+    {
+      "id":2,
+      "name" : "Günther Wozniak",
+      "amount" : "5",
+      "beschreibung" : "Diese Liste ist für den Supermarkt Spar",
+      "erstellDatum": "14.12.2020",
+      "erfuellDatum": "21.12.2020",
+      "status": "offen",
+      "articles" : [
+        {
+          "name" : "Kamillentee",
+          "preis" : "max. 3 Euro",
+          "Anzahl" : "1 Packung"
+        },
+        {
+          "name" : "Coca-Cola",
+          "preis" : "max. 1 Euro",
+          "Anzahl" : "0,5 Liter"
+        },
+        {
+          "name" : "Weizenmehl",
+          "preis" : "max. 4 Euro",
+          "Anzahl" : "1 Packung"
+        },
+        {
+          "name" : "Vollkornbrot",
+          "preis" : "max. 4 Euro",
+          "Anzahl" : "1 Stück"
+        },
+        {
+          "name" : "Rinderfilet",
+          "preis" : "max. 8 Euro",
+          "Anzahl" : "200 Gramm"
+        }
+      ]
+    },
+    {
+      "id":3,
+      "name" : "Karl Gates",
+      "amount" : "7",
+      "beschreibung" : "Diese Liste ist für den Supermarkt Spar",
+      "erstellDatum": "15.12.2020",
+      "erfuellDatum": "19.12.2020",
+      "status": "offen",
+      "articles" : [
+        {
+          "name" : "Jasmintee",
+          "preis" : "max. 3 Euro",
+          "Anzahl" : "1 Packung"
+        },
+        {
+          "name" : "Sprite",
+          "preis" : "max. 1 Euro",
+          "Anzahl" : "0,5 Liter"
+        },
+        {
+          "name" : "Weizenmehl",
+          "preis" : "max. 4 Euro",
+          "Anzahl" : "1 Packung"
+        },
+        {
+          "name" : "Klebeband",
+          "preis" : "max. 4 Euro",
+          "Anzahl" : "1 Rolle"
+        },
+        {
+          "name" : "Wasser",
+          "preis" : "max. 1 Euro",
+          "Anzahl" : "1 Liter"
+        },
+        {
+          "name" : "Hühnerfleisch",
+          "preis" : "max. 8 Euro",
+          "Anzahl" : "200 Gramm"
+        },
+        {
+          "name" : "Joghurt",
+          "preis" : "max. 2 Euro",
+          "Anzahl" : "1 Packung"
+        }
+      ]
+    },
+    {
+      "id":4,
+      "name" : "Michael Bezos",
+      "amount" : "3",
+      "beschreibung" : "Diese Liste ist für den Supermarkt Hofer",
+      "erstellDatum": "23.12.2020",
+      "erfuellDatum": "31.12.2020",
+      "status": "offen",
+      "articles" : [
+        {
+          "name" : "Hollundersaft",
+          "preis" : "max. 3 Euro",
+          "Anzahl" : "1 Liter"
+        },
+        {
+          "name" : "Cashew-Kerne",
+          "preis" : "max. 4 Euro",
+          "Anzahl" : "1 Packung"
+        },
+        {
+          "name" : "Weizenmehl",
+          "preis" : "max. 4 Euro",
+          "Anzahl" : "1 Packung"
+        }
+      ]
+    },
+    {
+      "id":5,
+      "name" : "Christian Cook",
+      "amount" : "4",
+      "beschreibung" : "Diese Liste ist für den Supermarkt Rewe",
+      "erstellDatum": "23.12.2020",
+      "erfuellDatum": "31.12.2020",
+      "status": "offen",
+      "articles" : [
+        {
+          "name" : "Schnittkäse",
+          "preis" : "max. 3 Euro",
+          "Anzahl" : "1 Packung"
+        },
+        {
+          "name" : "Cashew-Kerne",
+          "preis" : "max. 4 Euro",
+          "Anzahl" : "1 Packung"
+        },
+        {
+          "name" : "Klebeband",
+          "preis" : "max. 3 Euro",
+          "Anzahl" : "2 Rollen"
+        },
+        {
+          "name" : "Glücksbringer",
+          "preis" : "max. 4 Euro",
+          "Anzahl" : "1 Stück"
+        }
+      ]
+    },
+    {
+      "id":6,
+      "name" : "Markus Pichai",
+      "amount" : "4",
+      "beschreibung" : "Diese Liste ist für den Supermarkt Bila",
+      "erstellDatum": "12.12.2020",
+      "erfuellDatum": "30.12.2020",
+      "status": "offen",
+      "articles" : [
+        {
+          "name" : "Joghurt",
+          "preis" : "max. 3 Euro",
+          "Anzahl" : "1 Packung"
+        },
+        {
+          "name" : "Geldbörse",
+          "preis" : "max. 20 Euro",
+          "Anzahl" : "1 Stück"
+        },
+        {
+          "name" : "Bleistift",
+          "preis" : "max. 3 Euro",
+          "Anzahl" : "2 Stück"
+        },
+        {
+          "name" : "Glücksbringer",
+          "preis" : "max. 4 Euro",
+          "Anzahl" : "1 Stück"
+        }
+      ]
+    }
+
+
+  ]
+}

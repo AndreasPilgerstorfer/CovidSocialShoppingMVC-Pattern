@@ -1,0 +1,21 @@
+{
+  "usersId" : 1,
+  "users" : [
+    {
+      "id":999,
+      "name" : "Andreas Pilgerstorfer",
+      "wohnort": "Wartberg"
+    },
+    {
+      "id":998,
+      "name" : "Virgil Abloh",
+      "wohnort": "Hagenberg",
+      "rolle": "Hilfesuchend"
+    },
+    {
+      "id":997,
+      "name" : "Kim Jones",
+      "wohnort": "Pregarten"
+    }
+  ]
+}
